@@ -70,6 +70,7 @@ class WorkWithApi {
           curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__)."/cookie.txt");
           $out = curl_exec($curl);
           curl_close($curl);
+          $this->arrEmptyLeads = [];
         }
     }
 }
